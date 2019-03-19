@@ -19,7 +19,7 @@ function buscar(){
 
         $('#content').prepend('<img id="img" src=\"http://image.tmdb.org/t/p/w500/'+apiimg.results[0].poster_path+'\" class=\"img-responsive\">');
                 
-        $.getJSON("http://www.omdbapi.com/?t="+apiimg.results[0].title+"&apikey=70b60e71",function(apifilms) {
+        $.getJSON("https://www.omdbapi.com/?t="+apiimg.results[0].title+"&apikey=70b60e71",function(apifilms) {
 
             //elmateix que ((( getelementbyid("id").append = contingut  )))
             $('#jquerytext').append("<b>Títol: </b>"+apifilms["Title"]+"<br>");      
